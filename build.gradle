@@ -72,3 +72,15 @@ test {
 check {
     dependsOn functionalTest
 }
+
+plugins {
+  id "org.sonarqube" version "3.1.1"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "Saurabh240_joe-energy"
+    property "sonar.organization", "saurabh240"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
